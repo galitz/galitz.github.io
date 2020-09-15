@@ -20,5 +20,14 @@
       <description>These are things</description>
     </item>
     
+    <item>
+      <title>Vulnerability Management</title>
+      <link>https://galitz.github.io/posts/vuln-manage/</link>
+      <pubDate>Tue, 15 Sep 2020 12:22:58 +0000</pubDate>
+      
+      <guid>https://galitz.github.io/posts/vuln-manage/</guid>
+      <description>Let&amp;rsquo;s talk vulnerability management</description>
+    </item>
+    
   </channel>
 </rss>
