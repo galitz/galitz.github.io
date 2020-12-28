@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<title>Example search in splunk for Joomla admin logins - Geoff&#39;s place of science and cybersec stuff</title>
+<title>Threat hunting with splunk: simple credential attacks - Geoff&#39;s place of science and cybersec stuff</title>
 
 <meta name="description" content="Over in my useful_snippets repo, I just added a neat little example:
 index=botsv1 earliest=0 http_method=POST uri=&quot;/joomla/administrator/index.php&quot; site=&quot;imreallynotbatman.com&quot; src_ip=&quot;23.22.63.114&quot; | table timestamp,form_data It uses the botsv1 example dataset (provided by splunk), searches the entire history of the dataset for specified URL and sie. It then creates a table with timestamp and the form data as passed in by the browser. This is an example, but you can build off it to manually inspect what users and passwords are being targetted by malicious actors.">
@@ -33,7 +33,7 @@ index=botsv1 earliest=0 http_method=POST uri=&quot;/joomla/administrator/index.p
 <link rel="icon" href="https://galitz.github.io/favicon.ico">
 <meta name="generator" content="Hugo 0.65.3" />
 
-<meta property="og:title" content="Example search in splunk for Joomla admin logins" />
+<meta property="og:title" content="Threat hunting with splunk: simple credential attacks" />
 <meta property="og:description" content="Over in my useful_snippets repo, I just added a neat little example:
 index=botsv1 earliest=0 http_method=POST uri=&quot;/joomla/administrator/index.php&quot; site=&quot;imreallynotbatman.com&quot; src_ip=&quot;23.22.63.114&quot; | table timestamp,form_data It uses the botsv1 example dataset (provided by splunk), searches the entire history of the dataset for specified URL and sie. It then creates a table with timestamp and the form data as passed in by the browser. This is an example, but you can build off it to manually inspect what users and passwords are being targetted by malicious actors." />
 <meta property="og:type" content="article" />
@@ -67,7 +67,7 @@ index=botsv1 earliest=0 http_method=POST uri=&quot;/joomla/administrator/index.p
 <article class="post-single">
   <header class="post-header">
     <h1 class="post-title">
-      Example search in splunk for Joomla admin logins
+      Threat hunting with splunk: simple credential attacks
     </h1>
     
     <div class="post-meta">Theme PaperMod · September 15, 2020</div>
@@ -87,7 +87,7 @@ index=botsv1 earliest=0 http_method=POST uri=&quot;/joomla/administrator/index.p
 <div class="share-buttons">
     <p>Share On</p>
     <a class="share-button-single" target="_blank" rel="noopener" name="twitter"
-        href="https://twitter.com/intent/tweet/?text=Example%20search%20in%20splunk%20for%20Joomla%20admin%20logins&amp;url=https%3a%2f%2fgalitz.github.io%2fposts%2fsplunk-botsv1-joomla-admin-example%2f">
+        href="https://twitter.com/intent/tweet/?text=Threat%20hunting%20with%20splunk%3a%20simple%20credential%20attacks&amp;url=https%3a%2f%2fgalitz.github.io%2fposts%2fsplunk-botsv1-joomla-admin-example%2f">
         <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
             version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve">
             <path
@@ -95,7 +95,7 @@ index=botsv1 earliest=0 http_method=POST uri=&quot;/joomla/administrator/index.p
         </svg>
     </a>
     <a class="share-button-single" target="_blank" rel="noopener" name="linkedin"
-        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fgalitz.github.io%2fposts%2fsplunk-botsv1-joomla-admin-example%2f&amp;title=Example%20search%20in%20splunk%20for%20Joomla%20admin%20logins&amp;summary=Example%20search%20in%20splunk%20for%20Joomla%20admin%20logins&amp;source=https%3a%2f%2fgalitz.github.io%2fposts%2fsplunk-botsv1-joomla-admin-example%2f">
+        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fgalitz.github.io%2fposts%2fsplunk-botsv1-joomla-admin-example%2f&amp;title=Threat%20hunting%20with%20splunk%3a%20simple%20credential%20attacks&amp;summary=Threat%20hunting%20with%20splunk%3a%20simple%20credential%20attacks&amp;source=https%3a%2f%2fgalitz.github.io%2fposts%2fsplunk-botsv1-joomla-admin-example%2f">
         <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
             version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve">
             <path
@@ -103,7 +103,7 @@ index=botsv1 earliest=0 http_method=POST uri=&quot;/joomla/administrator/index.p
         </svg>
     </a>
     <a class="share-button-single" target="_blank" rel="noopener" name="reddit"
-        href="https://reddit.com/submit?url=https%3a%2f%2fgalitz.github.io%2fposts%2fsplunk-botsv1-joomla-admin-example%2f&title=Example%20search%20in%20splunk%20for%20Joomla%20admin%20logins">
+        href="https://reddit.com/submit?url=https%3a%2f%2fgalitz.github.io%2fposts%2fsplunk-botsv1-joomla-admin-example%2f&title=Threat%20hunting%20with%20splunk%3a%20simple%20credential%20attacks">
         <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
             version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve">
             <path
@@ -119,7 +119,7 @@ index=botsv1 earliest=0 http_method=POST uri=&quot;/joomla/administrator/index.p
         </svg>
     </a>
     <a class="share-button-single" target="_blank" rel="noopener" name="whatsapp"
-        href="whatsapp://send?text=Example%20search%20in%20splunk%20for%20Joomla%20admin%20logins%20-%20https%3a%2f%2fgalitz.github.io%2fposts%2fsplunk-botsv1-joomla-admin-example%2f">
+        href="whatsapp://send?text=Threat%20hunting%20with%20splunk%3a%20simple%20credential%20attacks%20-%20https%3a%2f%2fgalitz.github.io%2fposts%2fsplunk-botsv1-joomla-admin-example%2f">
         <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
             version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve">
             <path
@@ -127,7 +127,7 @@ index=botsv1 earliest=0 http_method=POST uri=&quot;/joomla/administrator/index.p
         </svg>
     </a>
     <a class="share-button-single" target="_blank" rel="noopener" name="telegram"
-        href="https://telegram.me/share/url?text=Example%20search%20in%20splunk%20for%20Joomla%20admin%20logins&amp;url=https%3a%2f%2fgalitz.github.io%2fposts%2fsplunk-botsv1-joomla-admin-example%2f">
+        href="https://telegram.me/share/url?text=Threat%20hunting%20with%20splunk%3a%20simple%20credential%20attacks&amp;url=https%3a%2f%2fgalitz.github.io%2fposts%2fsplunk-botsv1-joomla-admin-example%2f">
         <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
             version="1.1" width="100%" xml:space="preserve" viewBox="2 2 28 28">
             <path
