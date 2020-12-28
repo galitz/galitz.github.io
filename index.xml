@@ -11,15 +11,6 @@
     
     
     <item>
-      <title>Post 1</title>
-      <link>https://galitz.github.io/posts/post-1/</link>
-      <pubDate>Tue, 15 Sep 2020 12:22:58 +0000</pubDate>
-      
-      <guid>https://galitz.github.io/posts/post-1/</guid>
-      <description>These are things</description>
-    </item>
-    
-    <item>
       <title>Threat hunting with splunk: simple credential attacks</title>
       <link>https://galitz.github.io/posts/splunk-botsv1-joomla-admin-example/</link>
       <pubDate>Tue, 15 Sep 2020 12:22:58 +0000</pubDate>
