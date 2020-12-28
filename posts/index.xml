@@ -16,7 +16,7 @@
       <pubDate>Tue, 15 Sep 2020 12:22:58 +0000</pubDate>
       
       <guid>https://galitz.github.io/posts/splunk-botsv1-joomla-admin-example/</guid>
-      <description>Over in my [useful_snippets|https://github.com/galitz/useful_snippets] repo, I just added a neat little example:
+      <description>Over in my useful_snippets repo, I just added a neat little example:
 index=botsv1 earliest=0 http_method=POST uri=&amp;quot;/joomla/administrator/index.php&amp;quot; site=&amp;quot;imreallynotbatman.com&amp;quot; src_ip=&amp;quot;23.22.63.114&amp;quot; | table timestamp,form_data It uses the botsv1 example dataset (provided by splunk), searches the entire history of the dataset for specified URL and sie. It then creates a table with timestamp and the form data as passed in by the browser. This is an example, but you can build off it to manually inspect what users and passwords are being targetted by malicious actors.</description>
     </item>
     
