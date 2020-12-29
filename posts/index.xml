@@ -5,10 +5,21 @@
     <link>https://galitz.github.io/posts/</link>
     <description>Recent content in Posts on Geoff&#39;s place of science and cybersec stuff</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 15 Sep 2020 12:22:58 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 29 Dec 2020 09:23:14 +0000</lastBuildDate>
     
 	<atom:link href="https://galitz.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Threat_hunting_2</title>
+      <link>https://galitz.github.io/posts/threat_hunting_2/</link>
+      <pubDate>Tue, 29 Dec 2020 09:23:14 +0000</pubDate>
+      
+      <guid>https://galitz.github.io/posts/threat_hunting_2/</guid>
+      <description>Following up on a previous post on splunk and threat hunting, let&amp;rsquo;s go a step further. We demonstrated a query to show us attempted logins against joomla admin page. We saw what the attempted credentials were, but this resulted in so many lines of output that we couldn&amp;rsquo;t easily compile a list of IPs that we could identify as malicious.
+Here is the original query we talked about:
+index=botsv1 earliest=0 http_method=POST uri=&amp;quot;/joomla/administrator/index.</description>
+    </item>
     
     <item>
       <title>Threat hunting with splunk: simple credential attacks</title>
