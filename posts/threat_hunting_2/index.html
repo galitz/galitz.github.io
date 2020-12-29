@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<title>Threat_hunting_2 - Geoff&#39;s place of science and cybersec stuff</title>
+<title>Threat hunting with splunk: sorting by IP - Geoff&#39;s place of science and cybersec stuff</title>
 
 <meta name="description" content="Following up on a previous post on splunk and threat hunting, let&rsquo;s go a step further. We demonstrated a query to show us attempted logins against joomla admin page. We saw what the attempted credentials were, but this resulted in so many lines of output that we couldn&rsquo;t easily compile a list of IPs that we could identify as malicious.
 Here is the original query we talked about:
@@ -34,7 +34,7 @@ index=botsv1 earliest=0 http_method=POST uri=&quot;/joomla/administrator/index."
 <link rel="icon" href="https://galitz.github.io/favicon.ico">
 <meta name="generator" content="Hugo 0.65.3" />
 
-<meta property="og:title" content="Threat_hunting_2" />
+<meta property="og:title" content="Threat hunting with splunk: sorting by IP" />
 <meta property="og:description" content="Following up on a previous post on splunk and threat hunting, let&rsquo;s go a step further. We demonstrated a query to show us attempted logins against joomla admin page. We saw what the attempted credentials were, but this resulted in so many lines of output that we couldn&rsquo;t easily compile a list of IPs that we could identify as malicious.
 Here is the original query we talked about:
 index=botsv1 earliest=0 http_method=POST uri=&quot;/joomla/administrator/index." />
@@ -50,7 +50,7 @@ index=botsv1 earliest=0 http_method=POST uri=&quot;/joomla/administrator/index."
     class="single"
     id="top"><header class="header">
     <nav class="nav">
-        <p class="logo"><a href="https://galitz.github.io">Geoff&#39;s place of science and cybersec stuff</a></p>
+        <h1 class="logo"><a href="https://galitz.github.io">Geoff&#39;s place of science and cybersec stuff</a></h1>
         <ul class="menu" id="menu" onscroll="menu_on_scroll()">
             <li>
                 <a href="https://galitz.github.io/archives">Archive</a>
@@ -69,7 +69,7 @@ index=botsv1 earliest=0 http_method=POST uri=&quot;/joomla/administrator/index."
 <article class="post-single">
   <header class="post-header">
     <h1 class="post-title">
-      Threat_hunting_2
+      Threat hunting with splunk: sorting by IP
     </h1>
     
     <div class="post-meta">Theme PaperMod · December 29, 2020</div>
@@ -97,7 +97,7 @@ though, this will also count valid login traffic.</p>
 <div class="share-buttons">
     <p>Share On</p>
     <a class="share-button-single" target="_blank" rel="noopener" name="twitter"
-        href="https://twitter.com/intent/tweet/?text=Threat_hunting_2&amp;url=https%3a%2f%2fgalitz.github.io%2fposts%2fthreat_hunting_2%2f">
+        href="https://twitter.com/intent/tweet/?text=Threat%20hunting%20with%20splunk%3a%20sorting%20by%20IP&amp;url=https%3a%2f%2fgalitz.github.io%2fposts%2fthreat_hunting_2%2f">
         <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
             version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve">
             <path
@@ -105,7 +105,7 @@ though, this will also count valid login traffic.</p>
         </svg>
     </a>
     <a class="share-button-single" target="_blank" rel="noopener" name="linkedin"
-        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fgalitz.github.io%2fposts%2fthreat_hunting_2%2f&amp;title=Threat_hunting_2&amp;summary=Threat_hunting_2&amp;source=https%3a%2f%2fgalitz.github.io%2fposts%2fthreat_hunting_2%2f">
+        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fgalitz.github.io%2fposts%2fthreat_hunting_2%2f&amp;title=Threat%20hunting%20with%20splunk%3a%20sorting%20by%20IP&amp;summary=Threat%20hunting%20with%20splunk%3a%20sorting%20by%20IP&amp;source=https%3a%2f%2fgalitz.github.io%2fposts%2fthreat_hunting_2%2f">
         <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
             version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve">
             <path
@@ -113,7 +113,7 @@ though, this will also count valid login traffic.</p>
         </svg>
     </a>
     <a class="share-button-single" target="_blank" rel="noopener" name="reddit"
-        href="https://reddit.com/submit?url=https%3a%2f%2fgalitz.github.io%2fposts%2fthreat_hunting_2%2f&title=Threat_hunting_2">
+        href="https://reddit.com/submit?url=https%3a%2f%2fgalitz.github.io%2fposts%2fthreat_hunting_2%2f&title=Threat%20hunting%20with%20splunk%3a%20sorting%20by%20IP">
         <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
             version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve">
             <path
@@ -129,7 +129,7 @@ though, this will also count valid login traffic.</p>
         </svg>
     </a>
     <a class="share-button-single" target="_blank" rel="noopener" name="whatsapp"
-        href="whatsapp://send?text=Threat_hunting_2%20-%20https%3a%2f%2fgalitz.github.io%2fposts%2fthreat_hunting_2%2f">
+        href="whatsapp://send?text=Threat%20hunting%20with%20splunk%3a%20sorting%20by%20IP%20-%20https%3a%2f%2fgalitz.github.io%2fposts%2fthreat_hunting_2%2f">
         <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
             version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve">
             <path
@@ -137,7 +137,7 @@ though, this will also count valid login traffic.</p>
         </svg>
     </a>
     <a class="share-button-single" target="_blank" rel="noopener" name="telegram"
-        href="https://telegram.me/share/url?text=Threat_hunting_2&amp;url=https%3a%2f%2fgalitz.github.io%2fposts%2fthreat_hunting_2%2f">
+        href="https://telegram.me/share/url?text=Threat%20hunting%20with%20splunk%3a%20sorting%20by%20IP&amp;url=https%3a%2f%2fgalitz.github.io%2fposts%2fthreat_hunting_2%2f">
         <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
             version="1.1" width="100%" xml:space="preserve" viewBox="2 2 28 28">
             <path
