@@ -43,34 +43,5 @@ index=botsv1 earliest=0 http_method=POST uri=&amp;quot;/joomla/administrator/ind
 index=botsv1 earliest=0 http_method=POST uri=&amp;quot;/joomla/administrator/index.php&amp;quot; site=&amp;quot;imreallynotbatman.com&amp;quot; src_ip=&amp;quot;23.22.63.114&amp;quot; | table timestamp,form_data It uses the botsv1 example dataset (provided by splunk), searches the entire history of the dataset for specified URL and sie. It then creates a table with timestamp and the form data as passed in by the browser. This is an example, but you can build off it to manually inspect what users and passwords are being targetted by malicious actors.</description>
     </item>
     
-    <item>
-      <title>Vulnerability Discovery</title>
-      <link>https://galitz.github.io/posts/vuln-discvoery/</link>
-      <pubDate>Tue, 15 Sep 2020 12:22:58 +0000</pubDate>
-      
-      <guid>https://galitz.github.io/posts/vuln-discvoery/</guid>
-      <description>Let&amp;rsquo;s talk vulnerability discovery
-You gotta go do the VM to stay safe! For realz!</description>
-    </item>
-    
-    <item>
-      <title>Vulnerability Management</title>
-      <link>https://galitz.github.io/posts/vuln-manage/</link>
-      <pubDate>Tue, 15 Sep 2020 12:22:58 +0000</pubDate>
-      
-      <guid>https://galitz.github.io/posts/vuln-manage/</guid>
-      <description>Let&amp;rsquo;s talk vulnerability management</description>
-    </item>
-    
-    <item>
-      <title>Vulnerability Management Programs</title>
-      <link>https://galitz.github.io/posts/vuln-program/</link>
-      <pubDate>Tue, 15 Sep 2020 12:22:58 +0000</pubDate>
-      
-      <guid>https://galitz.github.io/posts/vuln-program/</guid>
-      <description>Why VM Program The components of a VM Program Tools
-A critical component of keeping your environment safe from exploitation is knowing what vulnerabilities exist, prioritising them for remediation and managing that process. That can look different from org to org based on a variety of factors to numerous go into here. Suffice it say there is no one good solution and teams will have to pick and choose the components of a vulnerability management program that works for them.</description>
-    </item>
-    
   </channel>
 </rss>
