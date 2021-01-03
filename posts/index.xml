@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Geoff&#39;s place of science and cybersec stuff</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>https://galitz.github.io/posts/</link>
     <description>Recent content in Posts on Geoff&#39;s place of science and cybersec stuff</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Tue, 29 Dec 2020 09:23:14 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://galitz.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Threat hunting with splunk: sorting by IP</title>
-      <link>http://localhost:1313/posts/threat_hunting_2/</link>
+      <link>https://galitz.github.io/posts/threat_hunting_2/</link>
       <pubDate>Tue, 29 Dec 2020 09:23:14 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/threat_hunting_2/</guid>
+      <guid>https://galitz.github.io/posts/threat_hunting_2/</guid>
       <description>Following up on a previous post on splunk and threat hunting, let&amp;rsquo;s go a step further. We demonstrated a query to show us attempted logins against joomla admin page. We saw what the attempted credentials were, but this resulted in so many lines of output that we couldn&amp;rsquo;t easily compile a list of IPs that we could identify as malicious.
 Here is the original query we talked about:
 index=botsv1 earliest=0 http_method=POST uri=&amp;quot;/joomla/administrator/index.</description>
@@ -23,39 +23,39 @@ index=botsv1 earliest=0 http_method=POST uri=&amp;quot;/joomla/administrator/ind
     
     <item>
       <title>Threat hunting with splunk: simple credential attacks</title>
-      <link>http://localhost:1313/posts/splunk-botsv1-joomla-admin-example/</link>
+      <link>https://galitz.github.io/posts/splunk-botsv1-joomla-admin-example/</link>
       <pubDate>Tue, 15 Sep 2020 12:22:58 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/splunk-botsv1-joomla-admin-example/</guid>
+      <guid>https://galitz.github.io/posts/splunk-botsv1-joomla-admin-example/</guid>
       <description>Over in my useful_snippets repo, I just added a neat little example:
 index=botsv1 earliest=0 http_method=POST uri=&amp;quot;/joomla/administrator/index.php&amp;quot; site=&amp;quot;imreallynotbatman.com&amp;quot; src_ip=&amp;quot;23.22.63.114&amp;quot; | table timestamp,form_data It uses the botsv1 example dataset (provided by splunk), searches the entire history of the dataset for specified URL and sie. It then creates a table with timestamp and the form data as passed in by the browser. This is an example, but you can build off it to manually inspect what users and passwords are being targetted by malicious actors.</description>
     </item>
     
     <item>
       <title>Vulnerability Discovery</title>
-      <link>http://localhost:1313/posts/vuln-discvoery/</link>
+      <link>https://galitz.github.io/posts/vuln-discvoery/</link>
       <pubDate>Tue, 15 Sep 2020 12:22:58 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/vuln-discvoery/</guid>
+      <guid>https://galitz.github.io/posts/vuln-discvoery/</guid>
       <description>Let&amp;rsquo;s talk vulnerability discovery
 You gotta go do the VM to stay safe! For realz!</description>
     </item>
     
     <item>
       <title>Vulnerability Management</title>
-      <link>http://localhost:1313/posts/vuln-manage/</link>
+      <link>https://galitz.github.io/posts/vuln-manage/</link>
       <pubDate>Tue, 15 Sep 2020 12:22:58 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/vuln-manage/</guid>
+      <guid>https://galitz.github.io/posts/vuln-manage/</guid>
       <description>Let&amp;rsquo;s talk vulnerability management</description>
     </item>
     
     <item>
       <title>Vulnerability Management Programs</title>
-      <link>http://localhost:1313/posts/vuln-program/</link>
+      <link>https://galitz.github.io/posts/vuln-program/</link>
       <pubDate>Tue, 15 Sep 2020 12:22:58 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/vuln-program/</guid>
+      <guid>https://galitz.github.io/posts/vuln-program/</guid>
       <description>Why VM Program The components of a VM Program Tools
 A critical component of keeping your environment safe from exploitation is knowing what vulnerabilities exist, prioritising them for remediation and managing that process. That can look different from org to org based on a variety of factors to numerous go into here. Suffice it say there is no one good solution and teams will have to pick and choose the components of a vulnerability management program that works for them.</description>
     </item>
