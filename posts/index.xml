@@ -5,10 +5,22 @@
     <link>https://galitz.github.io/posts/</link>
     <description>Recent content in Posts on Geoff&#39;s place of science and cybersec stuff</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 29 Dec 2020 09:23:14 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 03 Jan 2021 09:23:14 +0000</lastBuildDate>
     
 	<atom:link href="https://galitz.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Credential hunting with gitleaks</title>
+      <link>https://galitz.github.io/posts/gitleaks_1/</link>
+      <pubDate>Sun, 03 Jan 2021 09:23:14 +0000</pubDate>
+      
+      <guid>https://galitz.github.io/posts/gitleaks_1/</guid>
+      <description>Credential hunting is relevant to anyone in the infosec/cybersecurity space.
+I&amp;rsquo;ll spare you the long and probably unneeed introduction you get on most blogs and websites. Let&amp;rsquo;s just say that if you commit login credentials to your code or data repositories in plaintext, it is only a matter of time before they are found by malicious actors and used against you.
+So&amp;hellip; what to do?
+Under the assumption there may already be credentials from the past in your repositories and sometime in the future some might accidentally get commited, the thing to do is scan for them on a regular basis.</description>
+    </item>
     
     <item>
       <title>Threat hunting with splunk: sorting by IP</title>
