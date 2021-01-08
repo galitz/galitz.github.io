@@ -11,12 +11,12 @@
     
     
     <item>
-      <title>Cred Recovery Secret Question</title>
+      <title>Credential Recovery Secret Questions</title>
       <link>https://galitz.github.io/posts/cred-recovery-secret-question/</link>
       <pubDate>Fri, 08 Jan 2021 15:01:59 +0000</pubDate>
       
       <guid>https://galitz.github.io/posts/cred-recovery-secret-question/</guid>
-      <description>Something often missed in security awareness training for users and customers is the account recovery secret question issue. The issue here is that if people treat them like &amp;ldquo;real questions,&amp;rdquo; and therefore honestly it can end up putting their account at risk.
+      <description>Something often missed in security awareness training for users and customers is the account recovery secret question issue. The issue here is that if people treat them like &amp;ldquo;real questions,&amp;rdquo; and therefore answer honestly it can end up putting their account at risk.
 Consider a common recovery question: &amp;ldquo;What was the name of your first pet?&amp;rdquo; How many &amp;ldquo;Mr Socks&amp;rdquo; could there be in the universe? Well, it turns out quite a few.</description>
     </item>
     
