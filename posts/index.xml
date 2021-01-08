@@ -5,10 +5,20 @@
     <link>https://galitz.github.io/posts/</link>
     <description>Recent content in Posts on Geoff&#39;s place of science and cybersec stuff</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 03 Jan 2021 09:23:14 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 08 Jan 2021 15:01:59 +0000</lastBuildDate>
     
 	<atom:link href="https://galitz.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Cred Recovery Secret Question</title>
+      <link>https://galitz.github.io/posts/cred-recovery-secret-question/</link>
+      <pubDate>Fri, 08 Jan 2021 15:01:59 +0000</pubDate>
+      
+      <guid>https://galitz.github.io/posts/cred-recovery-secret-question/</guid>
+      <description>Something often missed in security awareness training for users and customers is the account recovery secret question issue. The issue here is that if people treat them like &amp;ldquo;real questions,&amp;rdquo; and therefore honestly it can end up putting their account at risk.
+Consider a common recovery question: &amp;ldquo;What was the name of your first pet?&amp;rdquo; How many &amp;ldquo;Mr Socks&amp;rdquo; could there be in the universe? Well, it turns out quite a few.</description>
+    </item>
     
     <item>
       <title>Credential hunting with gitleaks</title>
