@@ -53,5 +53,15 @@ index=botsv1 earliest=0 http_method=POST uri=&amp;quot;/joomla/administrator/ind
 index=botsv1 earliest=0 http_method=POST uri=&amp;quot;/joomla/administrator/index.php&amp;quot; site=&amp;quot;imreallynotbatman.com&amp;quot; src_ip=&amp;quot;23.22.63.114&amp;quot; | table timestamp,form_data It uses the botsv1 example dataset (provided by splunk), searches the entire history of the dataset for specified URL and sie. It then creates a table with timestamp and the form data as passed in by the browser. This is an example, but you can build off it to manually inspect what users and passwords are being targetted by malicious actors.</description>
     </item>
     
+    <item>
+      <title>Useful snippets and one-liners</title>
+      <link>https://galitz.github.io/posts/useful-links/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://galitz.github.io/posts/useful-links/</guid>
+      <description>Here is a link to some useful code/cli snippets and one-liners for various situations:
+Useful Snippets</description>
+    </item>
+    
   </channel>
 </rss>

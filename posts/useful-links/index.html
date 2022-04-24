@@ -5,11 +5,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<title>Threat hunting with splunk: sorting by IP - Geoff&#39;s place of science and cybersec stuff</title>
+<title>Useful snippets and one-liners - Geoff&#39;s place of science and cybersec stuff</title>
 
-<meta name="description" content="Following up on a previous post on splunk and threat hunting, let&rsquo;s go a step further. We demonstrated a query to show us attempted logins against joomla admin page. We saw what the attempted credentials were, but this resulted in so many lines of output that we couldn&rsquo;t easily compile a list of IPs that we could identify as malicious.
-Here is the original query we talked about:
-index=botsv1 earliest=0 http_method=POST uri=&quot;/joomla/administrator/index.">
+<meta name="description" content="Here is a link to some useful code/cli snippets and one-liners for various situations:
+Useful Snippets">
 <meta name="author" content="Theme PaperMod">
 
 
@@ -34,14 +33,12 @@ index=botsv1 earliest=0 http_method=POST uri=&quot;/joomla/administrator/index."
 <link rel="icon" href="https://galitz.github.io/favicon.ico">
 <meta name="generator" content="Hugo 0.65.3" />
 
-<meta property="og:title" content="Threat hunting with splunk: sorting by IP" />
-<meta property="og:description" content="Following up on a previous post on splunk and threat hunting, let&rsquo;s go a step further. We demonstrated a query to show us attempted logins against joomla admin page. We saw what the attempted credentials were, but this resulted in so many lines of output that we couldn&rsquo;t easily compile a list of IPs that we could identify as malicious.
-Here is the original query we talked about:
-index=botsv1 earliest=0 http_method=POST uri=&quot;/joomla/administrator/index." />
+<meta property="og:title" content="Useful snippets and one-liners" />
+<meta property="og:description" content="Here is a link to some useful code/cli snippets and one-liners for various situations:
+Useful Snippets" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://galitz.github.io/posts/threat_hunting_2/" />
-<meta property="article:published_time" content="2020-12-29T09:23:14+00:00" />
-<meta property="article:modified_time" content="2020-12-29T09:23:14+00:00" />
+<meta property="og:url" content="https://galitz.github.io/posts/useful-links/" />
+
 
 
 </head>
@@ -69,26 +66,16 @@ index=botsv1 earliest=0 http_method=POST uri=&quot;/joomla/administrator/index."
 <article class="post-single">
   <header class="post-header">
     <h1 class="post-title">
-      Threat hunting with splunk: sorting by IP
+      Useful snippets and one-liners
     </h1>
     
-    <div class="post-meta">Theme PaperMod · December 29, 2020</div>
+    <div class="post-meta">Theme PaperMod · January 1, 0001</div>
     
   </header>
   
   
-  <div class="post-content"><p>Following up on a previous post on splunk and threat hunting, let&rsquo;s go
-a step further.  We demonstrated a query to show us attempted logins against
-joomla admin page.  We saw what the attempted credentials were, but this
-resulted in so many lines of output that we couldn&rsquo;t easily compile a list
-of IPs that we could identify as malicious.</p>
-<p>Here is the original query we talked about:</p>
-<pre><code>index=botsv1 earliest=0 http_method=POST uri=&quot;/joomla/administrator/index.php&quot; site=&quot;imreallynotbatman.com&quot; src_ip=&quot;23.22.63.114&quot; |  table timestamp,form_data
-</code></pre><p>If we modify it to remove the table and the src_ip (which was just for example  purposes) and add a counter like this:</p>
-<pre><code>index=botsv1 earliest=0 http_method=POST uri=&quot;/joomla/administrator/index.php&quot; site=&quot;imreallynotbatman.com&quot; | stats count by src_ip
-</code></pre><p>We&rsquo;ll get a breakdown of activity to that URI by source IP.  Be careful here
-though, this will also count valid login traffic.</p>
-<p><img src="http://galitz.github.io/splunk_threat_hunting2.png" alt="splunk_threat_hunting2.png"></p>
+  <div class="post-content"><p>Here is a link to some useful code/cli snippets and one-liners for various situations:</p>
+<p><a href="https://github.com/galitz/useful_snippets">Useful Snippets</a></p>
 </div>
   <footer class="post-footer">
     
@@ -97,7 +84,7 @@ though, this will also count valid login traffic.</p>
 <div class="share-buttons">
     <p>Share On</p>
     <a class="share-button-single" target="_blank" rel="noopener" name="twitter"
-        href="https://twitter.com/intent/tweet/?text=Threat%20hunting%20with%20splunk%3a%20sorting%20by%20IP&amp;url=https%3a%2f%2fgalitz.github.io%2fposts%2fthreat_hunting_2%2f">
+        href="https://twitter.com/intent/tweet/?text=Useful%20snippets%20and%20one-liners&amp;url=https%3a%2f%2fgalitz.github.io%2fposts%2fuseful-links%2f">
         <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
             version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve">
             <path
@@ -105,7 +92,7 @@ though, this will also count valid login traffic.</p>
         </svg>
     </a>
     <a class="share-button-single" target="_blank" rel="noopener" name="linkedin"
-        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fgalitz.github.io%2fposts%2fthreat_hunting_2%2f&amp;title=Threat%20hunting%20with%20splunk%3a%20sorting%20by%20IP&amp;summary=Threat%20hunting%20with%20splunk%3a%20sorting%20by%20IP&amp;source=https%3a%2f%2fgalitz.github.io%2fposts%2fthreat_hunting_2%2f">
+        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fgalitz.github.io%2fposts%2fuseful-links%2f&amp;title=Useful%20snippets%20and%20one-liners&amp;summary=Useful%20snippets%20and%20one-liners&amp;source=https%3a%2f%2fgalitz.github.io%2fposts%2fuseful-links%2f">
         <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
             version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve">
             <path
@@ -113,7 +100,7 @@ though, this will also count valid login traffic.</p>
         </svg>
     </a>
     <a class="share-button-single" target="_blank" rel="noopener" name="reddit"
-        href="https://reddit.com/submit?url=https%3a%2f%2fgalitz.github.io%2fposts%2fthreat_hunting_2%2f&title=Threat%20hunting%20with%20splunk%3a%20sorting%20by%20IP">
+        href="https://reddit.com/submit?url=https%3a%2f%2fgalitz.github.io%2fposts%2fuseful-links%2f&title=Useful%20snippets%20and%20one-liners">
         <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
             version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve">
             <path
@@ -121,7 +108,7 @@ though, this will also count valid login traffic.</p>
         </svg>
     </a>
     <a class="share-button-single" target="_blank" rel="noopener" name="facebook"
-        href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fgalitz.github.io%2fposts%2fthreat_hunting_2%2f">
+        href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fgalitz.github.io%2fposts%2fuseful-links%2f">
         <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
             version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve">
             <path
@@ -129,7 +116,7 @@ though, this will also count valid login traffic.</p>
         </svg>
     </a>
     <a class="share-button-single" target="_blank" rel="noopener" name="whatsapp"
-        href="whatsapp://send?text=Threat%20hunting%20with%20splunk%3a%20sorting%20by%20IP%20-%20https%3a%2f%2fgalitz.github.io%2fposts%2fthreat_hunting_2%2f">
+        href="whatsapp://send?text=Useful%20snippets%20and%20one-liners%20-%20https%3a%2f%2fgalitz.github.io%2fposts%2fuseful-links%2f">
         <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
             version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve">
             <path
@@ -137,7 +124,7 @@ though, this will also count valid login traffic.</p>
         </svg>
     </a>
     <a class="share-button-single" target="_blank" rel="noopener" name="telegram"
-        href="https://telegram.me/share/url?text=Threat%20hunting%20with%20splunk%3a%20sorting%20by%20IP&amp;url=https%3a%2f%2fgalitz.github.io%2fposts%2fthreat_hunting_2%2f">
+        href="https://telegram.me/share/url?text=Useful%20snippets%20and%20one-liners&amp;url=https%3a%2f%2fgalitz.github.io%2fposts%2fuseful-links%2f">
         <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
             version="1.1" width="100%" xml:space="preserve" viewBox="2 2 28 28">
             <path
