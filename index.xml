@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Geoff&#39;s place of science and cybersec stuff</title>
     <link>https://galitz.github.io/</link>
     <description>Recent content on Geoff&#39;s place of science and cybersec stuff</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 08 Jan 2021 15:01:59 +0000</lastBuildDate>
-    
-	<atom:link href="https://galitz.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 08 Jan 2021 15:01:59 +0000</lastBuildDate><atom:link href="https://galitz.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Credential Recovery Secret Questions</title>
       <link>https://galitz.github.io/posts/cred-recovery-secret-question/</link>
@@ -40,7 +36,7 @@ Under the assumption there may already be credentials from the past in your repo
       <guid>https://galitz.github.io/posts/threat_hunting_2/</guid>
       <description>Following up on a previous post on splunk and threat hunting, let&amp;rsquo;s go a step further. We demonstrated a query to show us attempted logins against joomla admin page. We saw what the attempted credentials were, but this resulted in so many lines of output that we couldn&amp;rsquo;t easily compile a list of IPs that we could identify as malicious.
 Here is the original query we talked about:
-index=botsv1 earliest=0 http_method=POST uri=&amp;quot;/joomla/administrator/index.</description>
+index=botsv1 earliest=0 http_method=POST uri=&amp;#34;/joomla/administrator/index.</description>
     </item>
     
     <item>
@@ -50,7 +46,7 @@ index=botsv1 earliest=0 http_method=POST uri=&amp;quot;/joomla/administrator/ind
       
       <guid>https://galitz.github.io/posts/splunk-botsv1-joomla-admin-example/</guid>
       <description>Over in my useful_snippets repo, I just added a neat little example:
-index=botsv1 earliest=0 http_method=POST uri=&amp;quot;/joomla/administrator/index.php&amp;quot; site=&amp;quot;imreallynotbatman.com&amp;quot; src_ip=&amp;quot;23.22.63.114&amp;quot; | table timestamp,form_data It uses the botsv1 example dataset (provided by splunk), searches the entire history of the dataset for specified URL and sie. It then creates a table with timestamp and the form data as passed in by the browser. This is an example, but you can build off it to manually inspect what users and passwords are being targetted by malicious actors.</description>
+index=botsv1 earliest=0 http_method=POST uri=&amp;#34;/joomla/administrator/index.php&amp;#34; site=&amp;#34;imreallynotbatman.com&amp;#34; src_ip=&amp;#34;23.22.63.114&amp;#34; | table timestamp,form_data It uses the botsv1 example dataset (provided by splunk), searches the entire history of the dataset for specified URL and sie. It then creates a table with timestamp and the form data as passed in by the browser. This is an example, but you can build off it to manually inspect what users and passwords are being targetted by malicious actors.</description>
     </item>
     
     <item>

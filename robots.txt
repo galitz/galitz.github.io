@@ -1,1 +1,3 @@
 User-agent: *
+Disallow:
+Sitemap: https://galitz.github.io/sitemap.xml

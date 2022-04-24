@@ -1,222 +1,262 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="auto">
 
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-<title>Posts - Geoff&#39;s place of science and cybersec stuff</title>
-
-<meta name="description" content="Posts">
+<meta name="robots" content="index, follow">
+<title>Posts | Geoff&#39;s place of science and cybersec stuff</title>
+<meta name="keywords" content="">
+<meta name="description" content="Posts - Geoff&#39;s place of science and cybersec stuff">
 <meta name="author" content="Theme PaperMod">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<link href="https://galitz.github.io/css/stylesheet.min.ca1193ae43ddf6e9b67dc020f79877a65d4ea93769376ef87eb5233afd2490ee.css" integrity="sha256-yhGTrkPd9um2fcAg95h3pl1OqTdpN274frUjOv0kkO4=" rel="preload stylesheet"
-    as="style">
-
-
-<link rel="apple-touch-icon" href="https://galitz.github.io/apple-touch-icon.png">
+<link rel="canonical" href="https://galitz.github.io/posts/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.b4e19c453811e60acfec1f00c15ac2be1c53f6ab90187e684358ce7faaf48bab.css" integrity="sha256-tOGcRTgR5grP7B8AwVrCvhxT9quQGH5oQ1jOf6r0i6s=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://galitz.github.io/favicon.ico">
-<meta name="generator" content="Hugo 0.65.3" />
+<link rel="icon" type="image/png" sizes="16x16" href="https://galitz.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://galitz.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://galitz.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://galitz.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://galitz.github.io/posts/index.xml">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
 
-<link rel="alternate" type="application/rss+xml" href="https://galitz.github.io/posts/index.xml" title="Geoff's place of science and cybersec stuff" />
-<meta property="og:title" content="Posts" />
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Posts" />
 <meta property="og:description" content="Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://galitz.github.io/posts/" />
-<meta property="og:updated_time" content="2021-01-08T15:01:59+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Posts"/>
+<meta name="twitter:description" content="Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"/>
 
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Posts",
+      "item": "https://galitz.github.io/posts/"
+    }
+  ]
+}
+</script>
 </head>
 
-<body
-    class="list"
-    id="top"><header class="header">
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
     <nav class="nav">
-        <p class="logo"><a href="https://galitz.github.io">Geoff&#39;s place of science and cybersec stuff</a></p>
-        <ul class="menu" id="menu" onscroll="menu_on_scroll()">
+        <div class="logo">
+            <a href="https://galitz.github.io" accesskey="h" title="Geoff&#39;s place of science and cybersec stuff (Alt + H)">Geoff&#39;s place of science and cybersec stuff</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
             <li>
-                <a href="https://galitz.github.io/archives">Archive</a>
+                <a href="https://galitz.github.io/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
             </li>
             <li>
-                <a href="https://galitz.github.io/search/">Search</a>
+                <a href="https://galitz.github.io/search/" title="Search">
+                    <span>Search</span>
+                </a>
             </li>
             <li>
-                <a href="https://galitz.github.io/tags/">Tags</a>
+                <a href="https://galitz.github.io/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
             </li>
         </ul>
     </nav>
 </header>
-    <main class="main">
-
- 
+<main class="main"> 
 <header class="page-header">
   <h1>Posts</h1>
 </header>
 
-
-
-
-
-
-
-
-<article class="post-entry">
-  
+<article class="post-entry"> 
   <header class="entry-header">
-    <h2>
-      Credential Recovery Secret Questions
+    <h2>Credential Recovery Secret Questions
     </h2>
   </header>
-  
-  <section class="entry-content">
+  <div class="entry-content">
     <p>Something often missed in security awareness training for users and customers is the account recovery secret question issue. The issue here is that if people treat them like “real questions,” and therefore answer honestly it can end up putting their account at risk.
 Consider a common recovery question: “What was the name of your first pet?” How many “Mr Socks” could there be in the universe? Well, it turns out quite a few....</p>
-  </section>
-  
-  <footer class="entry-footer">
-    <time>January 8, 2021</time>
-     .
-    1min read
-     . Theme PaperMod
-  </footer>
+  </div>
+  <footer class="entry-footer"><span title='2021-01-08 15:01:59 +0000 UTC'>January 8, 2021</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Theme PaperMod</footer>
   <a class="entry-link" aria-label="post link to Credential Recovery Secret Questions" href="https://galitz.github.io/posts/cred-recovery-secret-question/"></a>
 </article>
-<article class="post-entry">
-  
+
+<article class="post-entry"> 
   <header class="entry-header">
-    <h2>
-      Credential hunting with gitleaks
+    <h2>Credential hunting with gitleaks
     </h2>
   </header>
-  
-  <section class="entry-content">
+  <div class="entry-content">
     <p>Credential hunting is relevant to anyone in the infosec/cybersecurity space.
 I’ll spare you the long and probably unneeed introduction you get on most blogs and websites. Let’s just say that if you commit login credentials to your code or data repositories in plaintext, it is only a matter of time before they are found by malicious actors and used against you.
 So… what to do?
 Under the assumption there may already be credentials from the past in your repositories and sometime in the future some might accidentally get commited, the thing to do is scan for them on a regular basis....</p>
-  </section>
-  
-  <footer class="entry-footer">
-    <time>January 3, 2021</time>
-     .
-    1min read
-     . Theme PaperMod
-  </footer>
+  </div>
+  <footer class="entry-footer"><span title='2021-01-03 09:23:14 +0000 UTC'>January 3, 2021</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Theme PaperMod</footer>
   <a class="entry-link" aria-label="post link to Credential hunting with gitleaks" href="https://galitz.github.io/posts/gitleaks_1/"></a>
 </article>
-<article class="post-entry">
-  
+
+<article class="post-entry"> 
   <header class="entry-header">
-    <h2>
-      Threat hunting with splunk: sorting by IP
+    <h2>Threat hunting with splunk: sorting by IP
     </h2>
   </header>
-  
-  <section class="entry-content">
+  <div class="entry-content">
     <p>Following up on a previous post on splunk and threat hunting, let’s go a step further. We demonstrated a query to show us attempted logins against joomla admin page. We saw what the attempted credentials were, but this resulted in so many lines of output that we couldn’t easily compile a list of IPs that we could identify as malicious.
 Here is the original query we talked about:
 index=botsv1 earliest=0 http_method=POST uri=&#34;/joomla/administrator/index....</p>
-  </section>
-  
-  <footer class="entry-footer">
-    <time>December 29, 2020</time>
-     .
-    1min read
-     . Theme PaperMod
-  </footer>
+  </div>
+  <footer class="entry-footer"><span title='2020-12-29 09:23:14 +0000 UTC'>December 29, 2020</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Theme PaperMod</footer>
   <a class="entry-link" aria-label="post link to Threat hunting with splunk: sorting by IP" href="https://galitz.github.io/posts/threat_hunting_2/"></a>
 </article>
-<article class="post-entry">
-  
+
+<article class="post-entry"> 
   <header class="entry-header">
-    <h2>
-      Threat hunting with splunk: simple credential attacks
+    <h2>Threat hunting with splunk: simple credential attacks
     </h2>
   </header>
-  
-  <section class="entry-content">
+  <div class="entry-content">
     <p>Over in my useful_snippets repo, I just added a neat little example:
 index=botsv1 earliest=0 http_method=POST uri=&#34;/joomla/administrator/index.php&#34; site=&#34;imreallynotbatman.com&#34; src_ip=&#34;23.22.63.114&#34; | table timestamp,form_data It uses the botsv1 example dataset (provided by splunk), searches the entire history of the dataset for specified URL and sie. It then creates a table with timestamp and the form data as passed in by the browser. This is an example, but you can build off it to manually inspect what users and passwords are being targetted by malicious actors....</p>
-  </section>
-  
-  <footer class="entry-footer">
-    <time>September 15, 2020</time>
-     .
-    1min read
-     . Theme PaperMod
-  </footer>
+  </div>
+  <footer class="entry-footer"><span title='2020-09-15 12:22:58 +0000 UTC'>September 15, 2020</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Theme PaperMod</footer>
   <a class="entry-link" aria-label="post link to Threat hunting with splunk: simple credential attacks" href="https://galitz.github.io/posts/splunk-botsv1-joomla-admin-example/"></a>
 </article>
-<article class="post-entry">
-  
+
+<article class="post-entry"> 
   <header class="entry-header">
-    <h2>
-      Useful snippets and one-liners
+    <h2>Useful snippets and one-liners
     </h2>
   </header>
-  
-  <section class="entry-content">
+  <div class="entry-content">
     <p>Here is a link to some useful code/cli snippets and one-liners for various situations:
-Useful Snippets...</p>
-  </section>
-  
-  <footer class="entry-footer">
-    <time>January 1, 0001</time>
-     .
-    1min read
-     . Theme PaperMod
-  </footer>
+Useful Snippets</p>
+  </div>
+  <footer class="entry-footer">1 min&nbsp;·&nbsp;Theme PaperMod</footer>
   <a class="entry-link" aria-label="post link to Useful snippets and one-liners" href="https://galitz.github.io/posts/useful-links/"></a>
 </article>
-
-
-    </main><footer class="footer">
+    </main>
+    
+<footer class="footer">
     <span>&copy; 2022 <a href="https://galitz.github.io">Geoff&#39;s place of science and cybersec stuff</a></span>
-    <span>&middot;</span>
-    <span>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</span>
-    <span>&middot;</span>
-    <span>Theme️ <a href="https://github.com/adityatelange/hugo-PaperMod" rel="noopener"
-            target="_blank">PaperMod</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
 </footer>
-<a href="#top" aria-label="go to top">
-    <button class="top-link" id="top-link" type="button">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6">
-            <path d="M12 6H0l6-6z" /></svg>
-    </button>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
 </a>
 
-
-<script src="https://galitz.github.io/js/highlight.min.min.be617795b40f52d6ca2248c7fbf433c49211c7acfe8f221ac54f6b0007c66ea1.js" integrity="sha256-vmF3lbQPUtbKIkjH&#43;/QzxJIRx6z&#43;jyIaxU9rAAfGbqE="></script>
 <script>
-    window.onload = function () {
-        if (localStorage.getItem("menu-scroll-position")) {
-            document.getElementById('menu').scrollLeft = localStorage.getItem("menu-scroll-position");
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
     }
-    hljs.initHighlightingOnLoad();
+
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener("click", function (e) {
             e.preventDefault();
-
-            document.querySelector(this.getAttribute("href")).scrollIntoView({
-                behavior: "smooth"
-            });
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
         });
     });
+
+</script>
+<script>
     var mybutton = document.getElementById("top-link");
     window.onscroll = function () {
         if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
@@ -227,9 +267,19 @@ Useful Snippets...</p>
             mybutton.style.opacity = "0";
         }
     };
-    function menu_on_scroll() {
-        localStorage.setItem("menu-scroll-position", document.getElementById('menu').scrollLeft);
-    }
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
 </script>
 </body>
 
