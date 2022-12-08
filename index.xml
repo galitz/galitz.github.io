@@ -5,7 +5,29 @@
     <link>https://galitz.github.io/</link>
     <description>Recent content on Geoff&#39;s place of science and cybersec stuff</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 08 Jan 2021 15:01:59 +0000</lastBuildDate><atom:link href="https://galitz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 25 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://galitz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fighting the Phishers</title>
+      <link>https://galitz.github.io/posts/spf_dkim_dmarc/</link>
+      <pubDate>Tue, 25 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://galitz.github.io/posts/spf_dkim_dmarc/</guid>
+      <description>The fight against phishing and spam emails is not restricted to incoming email filters and security solutions.
+Anyone sending email outbound likely has DNS records for email that can be locked down.
+Restrict SPF Update your list of servers or providers that can send mail on your behalf and then set the records to hard fail anything else.
+Add DKIM Add DKIM singatures to ensure the integrity of the contents of emails</description>
+    </item>
+    
+    <item>
+      <title>Repo Updates Aug 2022</title>
+      <link>https://galitz.github.io/posts/repo-updates-aug2022/</link>
+      <pubDate>Fri, 19 Aug 2022 19:07:58 +0000</pubDate>
+      
+      <guid>https://galitz.github.io/posts/repo-updates-aug2022/</guid>
+      <description>Recent updates:
+Added a tools link in github repo Updated the redblue examples repo with new content redblue-examples</description>
+    </item>
+    
     <item>
       <title>Credential Recovery Secret Questions</title>
       <link>https://galitz.github.io/posts/cred-recovery-secret-question/</link>
