@@ -8,7 +8,7 @@
 <title>Blue Team: SIEM Short Thoughts #1 | Geoff&#39;s place of science and cybersec stuff</title>
 <meta name="keywords" content="">
 <meta name="description" content="When building a SIEM, start like you would with other projects&hellip; what are your specifications?
-Specifications: What are you looking for? What inputs to do you want to monitor? Do you have a strategy? How long to retain data? Normalize the data Inputs and Tooling From here you can determine the right tool and how to configure.
+Specifications: What are you looking for? What are your inputs? Do you have a strategy? How long to retain data? Normalize the data Inputs and Tooling From here you can determine the right tool and how to configure.
 Most solutions that bill themselves as appropriate for using as a SIEM allow ingesting various input and formats.">
 <meta name="author" content="Theme PaperMod">
 <link rel="canonical" href="https://galitz.github.io/posts/siem-1/">
@@ -60,7 +60,7 @@ Most solutions that bill themselves as appropriate for using as a SIEM allow ing
     </style>
 </noscript><meta property="og:title" content="Blue Team: SIEM Short Thoughts #1" />
 <meta property="og:description" content="When building a SIEM, start like you would with other projects&hellip; what are your specifications?
-Specifications: What are you looking for? What inputs to do you want to monitor? Do you have a strategy? How long to retain data? Normalize the data Inputs and Tooling From here you can determine the right tool and how to configure.
+Specifications: What are you looking for? What are your inputs? Do you have a strategy? How long to retain data? Normalize the data Inputs and Tooling From here you can determine the right tool and how to configure.
 Most solutions that bill themselves as appropriate for using as a SIEM allow ingesting various input and formats." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://galitz.github.io/posts/siem-1/" /><meta property="article:section" content="posts" />
@@ -70,7 +70,7 @@ Most solutions that bill themselves as appropriate for using as a SIEM allow ing
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Blue Team: SIEM Short Thoughts #1"/>
 <meta name="twitter:description" content="When building a SIEM, start like you would with other projects&hellip; what are your specifications?
-Specifications: What are you looking for? What inputs to do you want to monitor? Do you have a strategy? How long to retain data? Normalize the data Inputs and Tooling From here you can determine the right tool and how to configure.
+Specifications: What are you looking for? What are your inputs? Do you have a strategy? How long to retain data? Normalize the data Inputs and Tooling From here you can determine the right tool and how to configure.
 Most solutions that bill themselves as appropriate for using as a SIEM allow ingesting various input and formats."/>
 
 
@@ -100,12 +100,12 @@ Most solutions that bill themselves as appropriate for using as a SIEM allow ing
   "@type": "BlogPosting",
   "headline": "Blue Team: SIEM Short Thoughts #1",
   "name": "Blue Team: SIEM Short Thoughts #1",
-  "description": "When building a SIEM, start like you would with other projects\u0026hellip; what are your specifications?\nSpecifications: What are you looking for? What inputs to do you want to monitor? Do you have a strategy? How long to retain data? Normalize the data Inputs and Tooling From here you can determine the right tool and how to configure.\nMost solutions that bill themselves as appropriate for using as a SIEM allow ingesting various input and formats.",
+  "description": "When building a SIEM, start like you would with other projects\u0026hellip; what are your specifications?\nSpecifications: What are you looking for? What are your inputs? Do you have a strategy? How long to retain data? Normalize the data Inputs and Tooling From here you can determine the right tool and how to configure.\nMost solutions that bill themselves as appropriate for using as a SIEM allow ingesting various input and formats.",
   "keywords": [
     
   ],
-  "articleBody": "When building a SIEM, start like you would with other projects… what are your specifications?\nSpecifications: What are you looking for? What inputs to do you want to monitor? Do you have a strategy? How long to retain data? Normalize the data Inputs and Tooling From here you can determine the right tool and how to configure.\nMost solutions that bill themselves as appropriate for using as a SIEM allow ingesting various input and formats. Just about anything will take JSON input these days, or you might want to take syslog style data, for example. This has more to do with what you want to monitor than the tooling.\nWhat are your inputs?\nApplication logs? WAF? Server logs? k8s logs? Retention 30 days is a common retention schedule, but take care if any special regulatory requirements that might require more. The longer you store data, the farther back you can investigate during an incident or for threat hunting. That will likely come at higher storage costs, though.\nMore than once during an investigation we’ve found the 30-day retention to be limiting and realized that the initial entry vector for a malicious actor may be unidentifiable because the monitor data has aged out of our SIEM.\nWhile the data in the SIEM may age out, it may be possible to keep the raw data around in the form of text files (in Cloudtrail + S3, for example) for further analysis for much longer. There will just be more overhead in analyzing that data in terms of effort and possible charges if you use a tool like AWS Athena.\nStrategy (and alerting) Will you be alerting from this data? Do you know how to prioritize the alert for investigation Do you have any auto remediation? Do you have a strategy for how the alerts are defined? Who triages the alerts and what kind of training would they need? Are all alerts treated with same level of urgency? Normalization Lastly, I would really, really strongly recommend normalizing the data going into the SIEM. You want to be searching fields that are clearly named like “src.ip” and not have to deal with multiple and similarly named fields like “source.ip” or “s.ip” or “IpAddress” simultaneously. Some frameworks allow you to process the data before it is inserted into the search indices.\nThis helps to avoid blind spots during an investigation and decrease the remediation time.\n",
-  "wordCount" : "400",
+  "articleBody": "When building a SIEM, start like you would with other projects… what are your specifications?\nSpecifications: What are you looking for? What are your inputs? Do you have a strategy? How long to retain data? Normalize the data Inputs and Tooling From here you can determine the right tool and how to configure.\nMost solutions that bill themselves as appropriate for using as a SIEM allow ingesting various input and formats. Just about anything will take JSON input these days, or you might want to take syslog style data, for example. This has more to do with what you want to monitor than the tooling.\nWhat is that you are looking for? That will help define what inputs you need.\nWhat are you looking for?\nAttempts to access to applications or data? Malicious traffic in your WAF? Malicious traffic that made it through the WAF to your app? Privilege elevation events? What are your inputs?\nApplication logs? WAF? Server logs? k8s logs? Retention 30 days is a common retention schedule, but take care if any special regulatory requirements that might require more. The longer you store data, the farther back you can investigate during an incident or for threat hunting. That will likely come at higher storage costs, though.\nMore than once during an investigation we’ve found the 30-day retention to be limiting and realized that the initial entry vector for a malicious actor may be unidentifiable because the monitor data has aged out of our SIEM.\nWhile the data in the SIEM may age out, it may be possible to keep the raw data around in the form of text files (in Cloudtrail + S3, for example) for further analysis for much longer. There will just be more overhead in analyzing that data in terms of effort and possible charges if you use a tool like AWS Athena.\nStrategy (and alerting) Will you be alerting from this data? Do you know how to prioritize the alert for investigation Do you have any auto remediation? Do you have a strategy for how the alerts are defined? Who triages the alerts and what kind of training would they need? Are all alerts treated with same level of urgency? Normalization Lastly, I would really, really strongly recommend normalizing the data going into the SIEM. You want to be searching fields that are clearly named like “src.ip” and not have to deal with multiple and similarly named fields like “source.ip” or “s.ip” or “IpAddress” simultaneously. Some frameworks allow you to process the data before it is inserted into the search indices.\nThis helps to avoid blind spots during an investigation and decrease the remediation time.\n",
+  "wordCount" : "442",
   "inLanguage": "en",
   "datePublished": "2023-09-21T12:26:14Z",
   "dateModified": "2023-09-21T12:26:14Z",
@@ -195,7 +195,7 @@ Most solutions that bill themselves as appropriate for using as a SIEM allow ing
     <h1 class="post-title">
       Blue Team: SIEM Short Thoughts #1
     </h1>
-    <div class="post-meta"><span title='2023-09-21 12:26:14 +0000 UTC'>September 21, 2023</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Theme PaperMod
+    <div class="post-meta"><span title='2023-09-21 12:26:14 +0000 UTC'>September 21, 2023</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Theme PaperMod
 
 </div>
   </header> 
@@ -203,7 +203,7 @@ Most solutions that bill themselves as appropriate for using as a SIEM allow ing
 <h2 id="specifications">Specifications:<a hidden class="anchor" aria-hidden="true" href="#specifications">#</a></h2>
 <ul>
 <li>What are you looking for?</li>
-<li>What inputs to do you want to monitor?</li>
+<li>What are your inputs?</li>
 <li>Do you have a strategy?</li>
 <li>How long to retain data?</li>
 <li>Normalize the data</li>
@@ -211,6 +211,14 @@ Most solutions that bill themselves as appropriate for using as a SIEM allow ing
 <h2 id="inputs-and-tooling">Inputs and Tooling<a hidden class="anchor" aria-hidden="true" href="#inputs-and-tooling">#</a></h2>
 <p>From here you can determine the right tool and how to configure.</p>
 <p>Most solutions that bill themselves as appropriate for using as a SIEM allow ingesting various input and formats. Just about anything will take JSON input these days, or you might want to take syslog style data, for example.  This has more to do with what you want to monitor than the tooling.</p>
+<p>What is that you are looking for?  That will help define what inputs you need.</p>
+<p>What are you looking for?</p>
+<ul>
+<li>Attempts to access to applications or data?</li>
+<li>Malicious traffic in your WAF?</li>
+<li>Malicious traffic that made it through the WAF to your app?</li>
+<li>Privilege elevation events?</li>
+</ul>
 <p>What are your inputs?</p>
 <ul>
 <li>Application logs?</li>

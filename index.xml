@@ -14,7 +14,7 @@
       
       <guid>https://galitz.github.io/posts/siem-1/</guid>
       <description>When building a SIEM, start like you would with other projects&amp;hellip; what are your specifications?
-Specifications: What are you looking for? What inputs to do you want to monitor? Do you have a strategy? How long to retain data? Normalize the data Inputs and Tooling From here you can determine the right tool and how to configure.
+Specifications: What are you looking for? What are your inputs? Do you have a strategy? How long to retain data? Normalize the data Inputs and Tooling From here you can determine the right tool and how to configure.
 Most solutions that bill themselves as appropriate for using as a SIEM allow ingesting various input and formats.</description>
     </item>
     
